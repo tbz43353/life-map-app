@@ -132,7 +132,7 @@ If you find Life Map useful, please consider supporting its development:
 
 - ⭐ **Star this repository** - Helps others discover the project
 - 💖 **[GitHub Sponsors](https://github.com/sponsors/tbz43353)** - Monthly or one-time sponsorship
-- ☕ **[Ko-fi](https://ko-fi.com/yourusername)** - Buy me a coffee *(coming soon)*
+- ☕ **[Ko-fi](https://ko-fi.com/tonybiz)** - Buy me a coffee
 
 Your support helps me dedicate more time to adding features, fixing bugs, and maintaining this project. Thank you! 🙏
 
