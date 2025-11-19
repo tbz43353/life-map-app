@@ -1,0 +1,65 @@
+{
+  "name": "life-map-app",
+  "version": "1.0.0",
+  "productName": "Life Map",
+  "description": "A desktop application for creating and visualizing life timelines",
+  "author": "Tony Biz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tbz43353/life-map-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tbz43353/life-map-app/issues"
+  },
+  "homepage": "https://github.com/tbz43353/life-map-app#readme",
+  "keywords": [
+    "life-map",
+    "timeline",
+    "visualization",
+    "electron",
+    "life-planning",
+    "personal-development",
+    "desktop-app",
+    "react",
+    "typescript"
+  ],
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && tsc -p tsconfig.electron.json",
+    "preview": "vite preview",
+    "generate-icons": "./scripts/generate-icons.sh",
+    "electron": "electron .",
+    "electron:dev": "npm run build && concurrently \"npm run dev\" \"wait-on http://localhost:5174 && electron .\"",
+    "electron:dev:packed": "npm run build && concurrently \"npm run dev\" \"wait-on http://localhost:5174 && electron-builder --dir --publish never && electron release/mac/Life Map.app/Contents/MacOS/Life\\ Map\"",
+    "electron:pack": "npm run build && electron-builder",
+    "electron:pack:mac": "npm run build && electron-builder --mac",
+    "electron:pack:win": "npm run build && electron-builder --win",
+    "electron:pack:linux": "npm run build && electron-builder --linux",
+    "electron:pack:all": "npm run build && electron-builder --mac --win --linux",
+    "electron:dev:pack": "npm run build && electron-builder --dir",
+    "electron:run:packed": "open 'release/mac-arm64/Life Map.app'",
+    "update-mac-installers": "./scripts/update-mac-installers.sh"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.26",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.4.1",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "concurrently": "^9.1.2",
+    "wait-on": "^8.0.1",
+    "tailwindcss": "^3.4.18",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49"
+  }
+}
+

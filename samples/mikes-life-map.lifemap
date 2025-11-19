@@ -1,0 +1,480 @@
+{
+  "title": "Mike's Life Map",
+  "date_of_birth": "1982-01-15",
+  "age_range": 80,
+  "zoom": 1.2000000000000002,
+  "categories": [
+    {
+      "id": 1,
+      "name": "projects",
+      "label": "Projects, major hobbies",
+      "section": "top",
+      "display_order": 1,
+      "color": "blue"
+    },
+    {
+      "id": 2,
+      "name": "relationships",
+      "label": "Relationships",
+      "section": "top",
+      "display_order": 2,
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "name": "residences",
+      "label": "Residences",
+      "section": "top",
+      "display_order": 3,
+      "color": "blue"
+    },
+    {
+      "id": 4,
+      "name": "remuneration",
+      "label": "Remuneration",
+      "section": "top",
+      "display_order": 4,
+      "color": "red"
+    },
+    {
+      "id": 5,
+      "name": "inflection_points",
+      "label": "Inflection points",
+      "section": "bottom",
+      "display_order": 1,
+      "color": "blue"
+    },
+    {
+      "id": 6,
+      "name": "key_insights",
+      "label": "Key insights achieved",
+      "section": "bottom",
+      "display_order": 2,
+      "color": "red"
+    },
+    {
+      "id": 7,
+      "name": "specific_goals",
+      "label": "Specific goals",
+      "section": "bottom",
+      "display_order": 3,
+      "color": "blue"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "title": "Piano lessons",
+      "description": "Classical piano training",
+      "start_age": 0,
+      "end_age": 16,
+      "color": "blue"
+    },
+    {
+      "id": 2,
+      "category_id": 1,
+      "title": "Rock climbing",
+      "description": "Weekend climbing and outdoor adventures",
+      "start_age": 18,
+      "end_age": 35,
+      "color": "blue"
+    },
+    {
+      "id": 3,
+      "category_id": 1,
+      "title": "Photography",
+      "description": "Landscape and portrait photography",
+      "start_age": 22,
+      "end_age": 60,
+      "color": "blue"
+    },
+    {
+      "id": 4,
+      "category_id": 1,
+      "title": "Blog writing",
+      "description": "Personal blog about technology and design",
+      "start_age": 28,
+      "end_age": 55,
+      "color": "blue"
+    },
+    {
+      "id": 5,
+      "category_id": 1,
+      "title": "Open source contributions",
+      "description": "Contributing to various open source projects",
+      "start_age": 32,
+      "end_age": 65,
+      "color": "blue"
+    },
+    {
+      "id": 6,
+      "category_id": 1,
+      "title": "Mentoring",
+      "description": "Mentoring junior developers",
+      "start_age": 38,
+      "end_age": 70,
+      "color": "blue"
+    },
+    {
+      "id": 7,
+      "category_id": 1,
+      "title": "Travel photography",
+      "description": "Combining travel with photography",
+      "start_age": 45,
+      "end_age": 65,
+      "color": "blue"
+    },
+    {
+      "id": 8,
+      "category_id": 1,
+      "title": "Writing a book",
+      "description": "Working on a technical book",
+      "start_age": 50,
+      "end_age": 55,
+      "color": "blue"
+    },
+    {
+      "id": 9,
+      "category_id": 1,
+      "title": "Teaching workshops",
+      "description": "Teaching design and development workshops",
+      "start_age": 55,
+      "end_age": 70,
+      "color": "blue"
+    },
+    {
+      "id": 10,
+      "category_id": 2,
+      "title": "High school relationship",
+      "description": "First serious relationship",
+      "start_age": 16,
+      "end_age": 19,
+      "color": "red"
+    },
+    {
+      "id": 11,
+      "category_id": 2,
+      "title": "College relationship",
+      "description": "Long-term relationship during college",
+      "start_age": 20,
+      "end_age": 24,
+      "color": "red"
+    },
+    {
+      "id": 12,
+      "category_id": 2,
+      "title": "Jordan",
+      "description": "Long-term partner",
+      "start_age": 28,
+      "end_age": 42,
+      "color": "red"
+    },
+    {
+      "id": 13,
+      "category_id": 2,
+      "title": "Jordan",
+      "description": "Life partner",
+      "start_age": 42,
+      "use_max_age": true,
+      "color": "red"
+    },
+    {
+      "id": 14,
+      "category_id": 3,
+      "title": "Portland, OR",
+      "description": "Childhood home",
+      "start_age": 0,
+      "end_age": 18,
+      "color": "red"
+    },
+    {
+      "id": 15,
+      "category_id": 3,
+      "title": "Seattle, WA",
+      "description": "College years",
+      "start_age": 18,
+      "end_age": 22,
+      "color": "red"
+    },
+    {
+      "id": 16,
+      "category_id": 3,
+      "title": "San Francisco, CA",
+      "description": "First job location",
+      "start_age": 22,
+      "end_age": 28,
+      "color": "red"
+    },
+    {
+      "id": 17,
+      "category_id": 3,
+      "title": "New York, NY",
+      "description": "Career growth period",
+      "start_age": 28,
+      "end_age": 35,
+      "color": "red"
+    },
+    {
+      "id": 18,
+      "category_id": 3,
+      "title": "Austin, TX",
+      "description": "Current residence",
+      "start_age": 35,
+      "end_age": 48,
+      "color": "red"
+    },
+    {
+      "id": 19,
+      "category_id": 3,
+      "title": "Remote / Travel",
+      "description": "Digital nomad lifestyle",
+      "start_age": 48,
+      "end_age": 60,
+      "color": "red"
+    },
+    {
+      "id": 20,
+      "category_id": 3,
+      "title": "Portland, OR",
+      "description": "Return to hometown",
+      "start_age": 60,
+      "use_max_age": true,
+      "color": "red"
+    },
+    {
+      "id": 21,
+      "category_id": 4,
+      "title": "Part-time retail",
+      "description": "High school job",
+      "start_age": 16,
+      "end_age": 18,
+      "color": "red"
+    },
+    {
+      "id": 22,
+      "category_id": 4,
+      "title": "Internship",
+      "description": "Software development internship",
+      "start_age": 20,
+      "end_age": 22,
+      "color": "red"
+    },
+    {
+      "id": 23,
+      "category_id": 4,
+      "title": "Junior Developer",
+      "description": "First full-time role",
+      "start_age": 22,
+      "end_age": 26,
+      "color": "red"
+    },
+    {
+      "id": 24,
+      "category_id": 4,
+      "title": "Senior Developer",
+      "description": "Promoted to senior role",
+      "start_age": 26,
+      "end_age": 32,
+      "color": "red"
+    },
+    {
+      "id": 25,
+      "category_id": 4,
+      "title": "Engineering Lead",
+      "description": "Leading a team",
+      "start_age": 32,
+      "end_age": 38,
+      "color": "red"
+    },
+    {
+      "id": 26,
+      "category_id": 4,
+      "title": "Principal Engineer",
+      "description": "Technical leadership role",
+      "start_age": 38,
+      "end_age": 45,
+      "color": "red"
+    },
+    {
+      "id": 27,
+      "category_id": 4,
+      "title": "Consulting",
+      "description": "Independent consulting work",
+      "start_age": 45,
+      "end_age": 55,
+      "color": "red"
+    },
+    {
+      "id": 28,
+      "category_id": 4,
+      "title": "Teaching & Writing",
+      "description": "Income from teaching and book royalties",
+      "start_age": 55,
+      "end_age": 70,
+      "color": "red"
+    },
+    {
+      "id": 29,
+      "category_id": 4,
+      "title": "Retirement / Passive Income",
+      "description": "Living off investments and royalties",
+      "start_age": 70,
+      "use_max_age": true,
+      "color": "red"
+    },
+    {
+      "id": 30,
+      "category_id": 5,
+      "title": "Discovered programming",
+      "description": "First exposure to coding",
+      "start_age": 14,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 31,
+      "category_id": 5,
+      "title": "Moved to San Francisco",
+      "description": "Career-defining relocation",
+      "start_age": 22,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 32,
+      "category_id": 5,
+      "title": "Started open source project",
+      "description": "Created popular open source library",
+      "start_age": 30,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 33,
+      "category_id": 5,
+      "title": "Met Jordan",
+      "description": "Met life partner",
+      "start_age": 28,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 34,
+      "category_id": 5,
+      "title": "Left corporate job",
+      "description": "Transitioned to independent consulting",
+      "start_age": 45,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 35,
+      "category_id": 5,
+      "title": "Published first book",
+      "description": "Major milestone in writing career",
+      "start_age": 52,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 36,
+      "category_id": 6,
+      "title": "Learning is a lifelong journey",
+      "description": "Realized the importance of continuous learning",
+      "start_age": 25,
+      "end_age": null,
+      "color": "red"
+    },
+    {
+      "id": 37,
+      "category_id": 6,
+      "title": "Work-life balance matters",
+      "description": "Understood the value of personal time",
+      "start_age": 30,
+      "end_age": null,
+      "color": "red"
+    },
+    {
+      "id": 38,
+      "category_id": 6,
+      "title": "Relationships are foundational",
+      "description": "Recognized importance of strong relationships",
+      "start_age": 32,
+      "end_age": null,
+      "color": "red"
+    },
+    {
+      "id": 39,
+      "category_id": 6,
+      "title": "Impact over income",
+      "description": "Prioritized meaningful work",
+      "start_age": 40,
+      "end_age": null,
+      "color": "red"
+    },
+    {
+      "id": 40,
+      "category_id": 6,
+      "title": "Teaching is learning",
+      "description": "Discovered joy in teaching others",
+      "start_age": 50,
+      "end_age": null,
+      "color": "red"
+    },
+    {
+      "id": 41,
+      "category_id": 7,
+      "title": "Become senior developer",
+      "description": "Career advancement goal",
+      "start_age": 26,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 42,
+      "category_id": 7,
+      "title": "Build successful open source project",
+      "description": "Create widely-used open source tool",
+      "start_age": 30,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 43,
+      "category_id": 7,
+      "title": "Financial independence",
+      "description": "Achieve financial security",
+      "start_age": 45,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 44,
+      "category_id": 7,
+      "title": "Publish technical book",
+      "description": "Write and publish first book",
+      "start_age": 52,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 45,
+      "category_id": 7,
+      "title": "Establish teaching practice",
+      "description": "Build sustainable teaching career",
+      "start_age": 55,
+      "end_age": null,
+      "color": "blue"
+    },
+    {
+      "id": 46,
+      "category_id": 7,
+      "title": "Retire comfortably",
+      "description": "Secure retirement by age 70",
+      "start_age": 70,
+      "end_age": null,
+      "color": "blue"
+    }
+  ]
+}

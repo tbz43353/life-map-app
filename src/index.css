@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Print styles - Landscape orientation */
+@media print {
+  @page {
+    /* Landscape orientation - Electron will handle this via API */
+    size: landscape;
+    margin: 0.5in;
+  }
+  
+  body {
+    background: white !important;
+  }
+  
+  /* Remove all grey backgrounds in print */
+  * {
+    background: white !important;
+    background-color: white !important;
+  }
+  
+  /* Exception: keep SVG and chart elements transparent */
+  svg,
+  svg *,
+  rect,
+  text,
+  line,
+  g {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  
+  /* Remove grey backgrounds from containers */
+  .bg-gray-50,
+  .bg-gray-100,
+  .bg-gray-200 {
+    background: white !important;
+    background-color: white !important;
+  }
+  
+  /* Hide navigation and buttons - use multiple selectors to ensure it works */
+  nav {
+    display: none !important;
+  }
+  
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+  
+  /* Hide action buttons but not all buttons */
+  main > div > button,
+  main > div > div > button {
+    display: none !important;
+  }
+  
+  /* Hide elements with print:hidden class */
+  [class*="print:hidden"],
+  [class*="print\\:hidden"] {
+    display: none !important;
+  }
+  
+  /* Show print-only elements */
+  [class*="print:block"],
+  [class*="print\\:block"] {
+    display: block !important;
+  }
+  
+  [class*="print:p-0"],
+  [class*="print\\:p-0"] {
+    padding: 0 !important;
+  }
+  
+  [class*="print:max-w-full"],
+  [class*="print\\:max-w-full"] {
+    max-width: 100% !important;
+  }
+  
+  /* Ensure timeline fits on page */
+  svg {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+  }
+  
+  /* Override any inline styles that might constrain width */
+  svg[style*="minWidth"],
+  svg[data-print-width] {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Ensure timeline container doesn't constrain width */
+  div[class*="overflow"] {
+    overflow: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Timeline container should not constrain SVG */
+  .bg-white.rounded-lg {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+  
+  /* Main container should not constrain width */
+  main {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  
+  /* Hide scrollbars */
+  * {
+    overflow: visible !important;
+  }
+  
+  /* Remove shadows and borders for print */
+  .shadow,
+  .shadow-sm,
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+  
+  /* Print-specific colors for black and white printing */
+  /* Use different shades to distinguish red vs blue */
+  /* Red items: use darker grey */
+  svg rect.print-red-item {
+    fill: #666666 !important; /* Dark grey for red items */
+  }
+  
+  /* Blue items: use lighter grey */
+  svg rect.print-blue-item {
+    fill: #999999 !important; /* Medium grey for blue items */
+  }
+  
+  /* Category backgrounds */
+  svg rect.print-blue-category {
+    fill: #e5e5e5 !important; /* Light grey for blue categories */
+  }
+  
+  svg rect.print-red-category {
+    fill: #cccccc !important; /* Medium-light grey for red categories */
+  }
+}
+
