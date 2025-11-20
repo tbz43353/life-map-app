@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#3b82f6" stroke="#1e40af" stroke-width="8"/>
+  
+  <!-- Timeline line -->
+  <line x1="80" y1="256" x2="432" y2="256" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Timeline markers (representing life events) -->
+  <circle cx="120" cy="256" r="16" fill="#ef4444"/>
+  <circle cx="200" cy="256" r="16" fill="#ef4444"/>
+  <circle cx="280" cy="256" r="16" fill="#ffffff"/>
+  <circle cx="360" cy="256" r="16" fill="#ef4444"/>
+  <circle cx="392" cy="256" r="16" fill="#ef4444"/>
+  
+  <!-- Top section bar (blue) -->
+  <rect x="100" y="180" width="120" height="20" rx="4" fill="#ffffff" opacity="0.8"/>
+  <rect x="240" y="180" width="100" height="20" rx="4" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Bottom section bar (red) -->
+  <rect x="150" y="312" width="140" height="20" rx="4" fill="#ef4444" opacity="0.9"/>
+  <rect x="300" y="312" width="80" height="20" rx="4" fill="#ef4444" opacity="0.9"/>
+  
+  <!-- Current age indicator (highlighted) -->
+  <circle cx="280" cy="256" r="24" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.8"/>
+</svg>
