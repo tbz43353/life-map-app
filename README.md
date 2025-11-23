@@ -20,17 +20,17 @@ Life Map helps you visualize your life journey by creating interactive timelines
 - **Category Management** - Add, edit, reorder, and customize categories to fit your needs
 - **Print & Export** - Print your life map with customizable PDF generation
 - **Local Storage** - All your data stays on your computer in simple `.lifemap` JSON files
-- **Cross-Platform** - Currently available for macOS (Windows and Linux support planned)
+- **Cross-Platform** - Available for macOS and Windows (Linux support planned)
 
 ## Installation
 
-### macOS (Currently Supported)
+### macOS
 
 **Download:** Get the latest `.dmg` file from the [Releases page](https://github.com/tbz43353/life-map-app/releases)
 
 **Installation Steps:**
 
-1. Download `Life Map-1.0.0.dmg`
+1. Download `Life.Map-1.0.0.dmg` (Intel) or `Life.Map-1.0.0-arm64.dmg` (Apple Silicon)
 2. Open the downloaded DMG file
 3. Drag **Life Map** to your **Applications** folder
 4. **Important**: On first launch, right-click the app and select "Open" to bypass Gatekeeper
@@ -40,13 +40,31 @@ Life Map helps you visualize your life journey by creating interactive timelines
 
 **Compatibility:**
 - ✅ macOS 11 (Big Sur) or later
-- ✅ Intel and Apple Silicon (M1/M2/M3) Macs
+- ✅ Intel Macs: Use `Life.Map-1.0.0.dmg`
+- ✅ Apple Silicon (M1/M2/M3) Macs: Use `Life.Map-1.0.0-arm64.dmg`
 
-### Windows & Linux
+### Windows
 
-**Status:** Windows and Linux installers are not yet available but are planned for future releases.
+**Download:** Get the latest `.exe` installer from the [Releases page](https://github.com/tbz43353/life-map-app/releases)
 
-**Want to help?** If you'd like to test Windows or Linux builds, please open an issue on GitHub!
+**Installation Steps:**
+
+1. Download `Life.Map.Setup.1.0.0.exe`
+2. Run the installer
+3. **Important**: Windows SmartScreen may warn you about the app being unrecognized
+   - Click "More info" then "Run anyway"
+   - This is required because the app is not yet code-signed
+   - You only need to do this once
+
+**Compatibility:**
+- ✅ Windows 10 or later
+- ✅ 64-bit systems
+
+### Linux
+
+**Status:** Linux installers are not yet available but are planned for future releases.
+
+**Want to help?** If you'd like to test Linux builds, please open an issue on GitHub!
 
 ## Building from Source
 
