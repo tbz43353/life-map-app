@@ -33,10 +33,29 @@ Life Map helps you visualize your life journey by creating interactive timelines
 1. Download `Life.Map-1.0.0.dmg` (Intel) or `Life.Map-1.0.0-arm64.dmg` (Apple Silicon)
 2. Open the downloaded DMG file
 3. Drag **Life Map** to your **Applications** folder
-4. **Important**: On first launch, right-click the app and select "Open" to bypass Gatekeeper
-   - This is required because the app is not yet code-signed
-   - You only need to do this once
-   - Alternative: Go to System Settings → Privacy & Security → Allow "Life Map"
+4. **First Launch** - The app is not code-signed, so macOS will block it. Use one of these methods:
+
+   **Method A: System Settings (Recommended)**
+   - Try to open Life Map (it will be blocked)
+   - Go to **System Settings** → **Privacy & Security**
+   - Scroll down to find "Life Map was blocked"
+   - Click **"Open Anyway"**
+
+   **Method B: Right-Click Open**
+   - In Finder, go to Applications
+   - Right-click (or Control-click) on Life Map
+   - Select **"Open"** from the menu
+   - Click **"Open"** in the dialog
+
+**Troubleshooting:**
+
+If you see **"Life Map is damaged and can't be opened"**:
+1. Open **Terminal** (search for it in Spotlight)
+2. Copy and paste this command:
+   ```
+   xattr -cr /Applications/Life\ Map.app
+   ```
+3. Press Enter, then open Life Map normally
 
 **Compatibility:**
 - ✅ macOS 11 (Big Sur) or later

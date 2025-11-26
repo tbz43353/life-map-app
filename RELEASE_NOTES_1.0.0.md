@@ -24,7 +24,16 @@ The first public release of Life Map - a desktop application for creating and vi
 | `Life.Map-1.0.0-arm64.dmg` | Apple Silicon (M1/M2/M3) Macs |
 | `Life.Map-1.0.0.dmg` | Intel Macs |
 
-**Note:** On first launch, right-click the app and select "Open" to bypass Gatekeeper (app is not yet code-signed).
+**First Launch:** The app is not code-signed, so macOS will block it. Use one of these methods:
+
+- **Method A: System Settings (Recommended)** - Try to open Life Map (it will be blocked), then go to **System Settings** → **Privacy & Security**, scroll down to find "Life Map was blocked", and click **"Open Anyway"**
+
+- **Method B: Right-Click Open** - In Finder, right-click (or Control-click) on Life Map and select **"Open"**, then click **"Open"** in the dialog
+
+**Troubleshooting:** If you see "Life Map is damaged and can't be opened", open Terminal and run:
+```
+xattr -cr /Applications/Life\ Map.app
+```
 
 ### Windows
 | File | Description |
