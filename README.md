@@ -33,29 +33,17 @@ Life Map helps you visualize your life journey by creating interactive timelines
 1. Download `Life.Map-1.0.0.dmg` (Intel) or `Life.Map-1.0.0-arm64.dmg` (Apple Silicon)
 2. Open the downloaded DMG file
 3. Drag **Life Map** to your **Applications** folder
-4. **First Launch** - The app is not code-signed, so macOS will block it. Use one of these methods:
-
-   **Method A: System Settings (Recommended)**
-   - Try to open Life Map (it will be blocked)
-   - Go to **System Settings** → **Privacy & Security**
-   - Scroll down to find "Life Map was blocked"
-   - Click **"Open Anyway"**
-
-   **Method B: Right-Click Open**
-   - In Finder, go to Applications
-   - Right-click (or Control-click) on Life Map
-   - Select **"Open"** from the menu
-   - Click **"Open"** in the dialog
+4. Open Life Map from your Applications folder
 
 **Troubleshooting:**
 
-If you see **"Life Map is damaged and can't be opened"**:
-1. Open **Terminal** (search for it in Spotlight)
-2. Copy and paste this command:
+If macOS blocks the app or shows **"Life Map is damaged and can't be opened"**:
+1. Go to **System Settings** → **Privacy & Security**
+2. Scroll down to find "Life Map was blocked" and click **"Open Anyway"**
+3. If the issue persists, open **Terminal** and run:
    ```
    xattr -cr /Applications/Life\ Map.app
    ```
-3. Press Enter, then open Life Map normally
 
 **Compatibility:**
 - ✅ macOS 11 (Big Sur) or later
@@ -127,6 +115,24 @@ npm run electron:pack:all
 ```
 
 Installers will be created in the `release/` directory.
+
+### macOS Code Signing (Optional)
+
+To build signed and notarized macOS installers, set these environment variables:
+
+```bash
+export APPLE_ID="your-apple-id@example.com"
+export APPLE_APP_SPECIFIC_PASSWORD="your-app-specific-password"
+export APPLE_TEAM_ID="your-team-id"
+npm run electron:pack:mac
+```
+
+Requirements:
+- Apple Developer account
+- "Developer ID Application" certificate installed in Keychain
+- App-specific password from [appleid.apple.com](https://appleid.apple.com)
+
+Without these variables, builds will be unsigned (suitable for local testing).
 
 ## Usage
 

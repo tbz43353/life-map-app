@@ -9,6 +9,7 @@ release/
 out/
 build/*
 !build/icons/
+!build/entitlements.mac.plist
 installers/
 
 # Environment
